@@ -4,6 +4,7 @@ import 'package:nitw/footer.dart';
 import 'package:nitw/gridSection.dart';
 import 'package:nitw/herosection.dart';
 import 'package:nitw/notic.dart';
+import 'package:nitw/noticeMarque.dart';
 
 
 void main() {
@@ -80,11 +81,17 @@ class HomePage extends StatelessWidget {
             CarouselSection(),
             Notic(),
             Directormessage(),
+            NoticeMarquee(notices: [
+              "Welcome to our app! Stay tuned for updates.",
+              "New feature: Dark mode is now available 🌙.",
+              "Don't miss our special discount this weekend!",
+            ], ),
             Gridsection(),
             Footer(),
           ],
         ),
       ),
     );
+    
   }
 }
